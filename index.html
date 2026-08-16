@@ -457,7 +457,7 @@ function renderGrid(){
     card.className = "card" + (ranking.includes(m.id) ? " selected" : "");
     card.innerHTML = `
       <div class="card-art">
-        <img src="${slugify(m.title)}.png" alt="${m.title}" loading="lazy"
+        <img src="./${slugify(m.title)}.png" alt="${m.title}" loading="lazy"
              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
         <div class="card-art-fallback">${m.icon}</div>
       </div>
