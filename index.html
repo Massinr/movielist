@@ -544,7 +544,7 @@ const lightboxTitle = document.getElementById("lightboxTitle");
 const lightboxClose = document.getElementById("lightboxClose");
 
 function openLightbox(movie){
-  lightboxImg.src = "assets/" + slugify(movie.title) + ".png";
+  lightboxImg.src = slugify(movie.title) + ".png";
   lightboxImg.alt = movie.title;
   lightboxTitle.textContent = movie.title + " (" + movie.year + ")";
   lightbox.classList.add("open");
